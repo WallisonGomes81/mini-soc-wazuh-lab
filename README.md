@@ -1,39 +1,64 @@
-# Mini SOC com Wazuh – Laboratório Prático
+# 🛡️ Mini SOC com Wazuh – Laboratório Prático
 
-## 📌 Objetivo
-Este projeto tem como objetivo simular um ambiente básico de SOC (Security Operations Center),
-utilizando o Wazuh para monitoramento, detecção e análise de eventos de segurança.
+## 📌 Sobre o projeto
+Este projeto consiste na criação de um **Mini Security Operations Center (SOC)** em ambiente de laboratório, utilizando o **Wazuh** como ferramenta central de monitoramento, detecção e análise de eventos de segurança.
 
-O laboratório foi desenvolvido com foco em aprendizado prático da ferramenta, cobrindo desde a
-criação do ambiente até a análise de alertas.
+O objetivo é **aplicar na prática conceitos de Blue Team**, simular ataques controlados e analisar os alertas gerados, reproduzindo atividades comuns da rotina de um analista SOC.
 
-## 🏗️ Arquitetura do Ambiente
-- Wazuh Server
-- 1 VM Linux (Ubuntu)
-- 1 VM Windows
-- Atacante: Kali Linux
+---
 
-## 🛠️ Tecnologias Utilizadas
-- Wazuh
-- Elastic Stack
-- Linux
-- Windows
-- Kali Linux
-- VirtualBox / VMware
+## 🎯 Objetivos
+- Compreender o funcionamento de um SOC na prática  
+- Instalar e configurar o Wazuh Server e agentes  
+- Monitorar sistemas Linux e Windows  
+- Simular eventos de segurança e ataques controlados  
+- Analisar alertas e dashboards  
+- Documentar aprendizados e boas práticas  
 
-## 📂 Etapas do Projeto
-1. Criação das máquinas virtuais
-2. Instalação do Wazuh Server
-3. Instalação e configuração dos agentes
-4. Simulação de eventos de segurança
-5. Monitoramento e análise no dashboard
-6. Conclusão e aprendizados
+---
 
-## 📸 Evidências
-*(prints do dashboard, agentes conectados e alertas)*
+## 🧱 Ambiente do laboratório
+- Hypervisor: VMware  
+- Wazuh Server (OVA oficial)  
+- Linux (Ubuntu / Kali Linux) com agente Wazuh  
+- Windows 10 com agente Wazuh  
+- Ambiente totalmente isolado e controlado  
 
-## 📚 Aprendizados
-- Funcionamento de um SIEM
-- Conceitos básicos de SOC
-- Análise de logs e alertas
-- Monitoramento de ambientes Windows e Linux
+---
+
+## 🛠️ Tecnologias e ferramentas
+- Wazuh  
+- Linux (Ubuntu / Kali Linux)  
+- Windows 10  
+- SSH  
+- Hydra (para simulações controladas)  
+- VMware  
+
+---
+
+## 📂 Estrutura do projeto
+
+```text
+01-ambiente
+ └── vms.md
+
+02-instalacao-wazuh
+ ├── wazuh-server.md
+ ├── agent-linux.md
+ └── agent-windows.md
+
+03-configuracoes
+ ├── grupos-agentes.md
+ └── politicas.md
+
+04-simulacoes
+ ├── brute-force-linux.md
+ ├── autenticacao-windows.md
+ └── comandos-utilizados.md
+
+05-monitoramento
+ ├── alertas.md
+ └── dashboards.md
+
+06-conclusao
+ └── aprendizados.md
